@@ -1,0 +1,15 @@
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Main.dll.config
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Main.dll
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Main.pdb
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Common.dll
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Repository.dll
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Common.pdb
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Repository.pdb
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Repository.dll.config
+C:\Users\何明\Desktop\InitData\Main\obj\Debug\Main.csprojAssemblyReference.cache
+C:\Users\何明\Desktop\InitData\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\何明\Desktop\InitData\Main\obj\Debug\Main.csproj.CopyComplete
+C:\Users\何明\Desktop\InitData\Main\obj\Debug\Main.dll
+C:\Users\何明\Desktop\InitData\Main\obj\Debug\Main.pdb
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\MySql.Data.dll
+C:\Users\何明\Desktop\InitData\Main\bin\Debug\Oracle.ManagedDataAccess.dll
