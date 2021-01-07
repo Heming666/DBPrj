@@ -52,14 +52,14 @@ namespace MyPrj.DoMain
                         {
                             string guidId = Guid.NewGuid().ToString();
                             string indexInsert = @"INSERT INTO BASE_INDEXMANAGE(ID, DEPTID, TITLE, DEPTCODE, DEPTNAME, SORT, ISSHOW, CREATEUSERID, CREATEDATE, CREATEUSERNAME, MODIFYUSERID, MODIFYDATE, MODIFYUSERNAME, INDEXTYPE) 
-VALUES ('" + guidId + "', '" + dept.DepartmentId + "', '" + index.Title + "', '" + dept.EnCode + "', '" + dept.FullName + "', " + index.Sort + ", " + index.IsShow + ", 'SYSTEM',{0} , 'Software', 'SYSTEM', '{0}', 'Software', " + index.IndexType + ")";
+VALUES ('" + guidId + "', '" + dept.DepartmentId + "', '" + index.Title + "', '" + dept.EnCode + "', '" + dept.FullName + "', " + index.Sort + ", " + index.IsShow + ", 'SYSTEM',{0} , 'Software', 'SYSTEM', {0}, 'Software', " + index.IndexType + ")";
                             if (_dbmodel.DBType == "Oracle")
                             {
-                                indexInsert = string.Format(indexInsert, "SYSDATE");
+                                indexInsert = string.Format(indexInsert, $"to_date('{DateTime.Now:yyyy-MM-dd HH:mm:ss}','yyyy-mm-dd hh24:mi:ss')");
                             }
                             else
                             {
-                                indexInsert = string.Format(indexInsert, "SYSDATE()");
+                                indexInsert = string.Format(indexInsert, $"'{DateTime.Now:yyyy-MM-dd HH:mm-ss}'");
                             }
                             indexSqlList.Add(indexInsert);
                             dic.Add(guidId,index.Id);
