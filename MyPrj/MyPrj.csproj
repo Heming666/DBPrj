@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\..\..\..\Desktop\ImportExecl\bin\Debug\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\PresentationFramework.4.6.0\lib\PresentationFramework.dll</HintPath>
     </Reference>
@@ -55,6 +61,7 @@
     <Compile Include="DataBaseForm.Designer.cs">
       <DependentUpon>DataBaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoMain\IndexManageMethod.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +85,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\Main.dll.config" />
+    <None Include="bin\Debug\MyPrj.exe.config" />
+    <None Include="bin\Debug\Repository.dll.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,14 +107,27 @@
       <Project>{9c917e07-2883-4728-951a-4507ea5cd72c}</Project>
       <Name>Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Main\Main.csproj">
-      <Project>{38dbfa72-0513-4d5f-ab55-ee375065a7b1}</Project>
-      <Name>Main</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{99909e13-084d-4966-b2f2-bc7c2a605730}</Project>
       <Name>Repository</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="Content\指标\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Common.dll" />
+    <Content Include="bin\Debug\Common.pdb" />
+    <Content Include="bin\Debug\Main.dll" />
+    <Content Include="bin\Debug\Main.pdb" />
+    <Content Include="bin\Debug\MyPrj.exe" />
+    <Content Include="bin\Debug\MyPrj.pdb" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\Oracle.ManagedDataAccess.dll" />
+    <Content Include="bin\Debug\PresentationFramework.dll" />
+    <Content Include="bin\Debug\Repository.dll" />
+    <Content Include="bin\Debug\Repository.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

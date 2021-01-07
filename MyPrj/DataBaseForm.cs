@@ -111,6 +111,7 @@ namespace MyPrj
             }
             dbmodel = dB;
         }
+
         public event Action<DBModel,IRepository> GetDB;
         /// <summary>
         /// 选择完数据库
@@ -122,6 +123,19 @@ namespace MyPrj
             ListItem selectedItem = (ListItem)cbx_Db.SelectedItem;
             string value = selectedItem.Value;    //值
             dbmodel.Database = value;
+            //此时需要重新生成一下repository  因为链接字符串里面的数据库未生成
+            switch (dbmodel.DBType)
+            {
+                case "MySql":
+                    repository = new MysqlRepository(dbmodel);
+
+                    break;
+                case "Oracle":
+                    repository = new OracleRepository(dbmodel);
+                    break;
+                default:
+                    break;
+            }
             GetDB?.Invoke(dbmodel, repository);
             this.Close();
         }

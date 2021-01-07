@@ -3,3 +3,8 @@ C:\Users\何明\Desktop\InitData\Common\bin\Debug\Common.pdb
 C:\Users\何明\Desktop\InitData\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\何明\Desktop\InitData\Common\obj\Debug\Common.dll
 C:\Users\何明\Desktop\InitData\Common\obj\Debug\Common.pdb
+C:\Users\何明\Source\Repos\DBPrj\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\何明\Source\Repos\DBPrj\Common\obj\Debug\Common.dll
+C:\Users\何明\Source\Repos\DBPrj\Common\obj\Debug\Common.pdb
+C:\Users\何明\Source\Repos\DBPrj\Common\bin\Debug\Common.dll
+C:\Users\何明\Source\Repos\DBPrj\Common\bin\Debug\Common.pdb

@@ -11,6 +11,10 @@ namespace Common.Models
     /// </summary>
     public class IndexManageEntity 
     {
+        /// <summary>
+        /// 所属单位性质
+        /// </summary>
+        public string Nature { get; set; }
         public string Id { get; set; }
         public string DeptId { get; set; }
         /// <summary>

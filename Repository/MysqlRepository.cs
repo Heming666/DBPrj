@@ -13,6 +13,7 @@ namespace Repository
     public class MysqlRepository : IRepository
     {
         private readonly string conString;
+        //private DBModel _dbModel;
         public MysqlRepository(string conStr) => conString = conStr;
         public MysqlRepository(DBModel db)
         {
@@ -72,6 +73,11 @@ namespace Repository
         {
             DataTable dt = await this.ExecuteDataTable(sql);
             return Util.ConvertTo<T>(dt);
+        }
+
+        public DBModel GetDB()
+        {
+            return new DBModel();
         }
     }
 }

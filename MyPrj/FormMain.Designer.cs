@@ -42,6 +42,7 @@ namespace MyPrj
             // 
             // Btn_BuidIndex
             // 
+            this.Btn_BuidIndex.AccessibleDescription = "11111";
             this.Btn_BuidIndex.Location = new System.Drawing.Point(36, 47);
             this.Btn_BuidIndex.Name = "Btn_BuidIndex";
             this.Btn_BuidIndex.Size = new System.Drawing.Size(86, 31);

@@ -55,6 +55,11 @@ namespace Repository
             return count;
         }
 
+        public DBModel GetDB()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IList<T>> GetList<T>(string sql) where T : class, new()
         {
             DataTable dt = await this.ExecuteDataTable(sql);

@@ -1,5 +1,6 @@
 ﻿using Common.Models;
-using Main;
+using MyPrj.DoMain;
+using Newtonsoft.Json;
 using Repository;
 using System;
 using System.Collections.Generic;
@@ -60,8 +61,17 @@ namespace MyPrj
         /// <param name="e"></param>
         private void Btn_BuidIndex_Click(object sender, EventArgs e)
         {
-            IndexManageMethod indexMethod = new IndexManageMethod(_repository);
-
+             var  indexManageMethod =  new IndexManageMethod(_repository,_dbmodel);
+            indexManageMethod.WriteMsg += this.WriteMsg;
+            try
+            {
+                indexManageMethod.InitIndexData();
+            }
+            catch (Exception ex)
+            {
+                WriteMsg(ex.Message+"\r\n"+JsonConvert.SerializeObject(ex.InnerException));
+            }
+           
         }
     }
 }

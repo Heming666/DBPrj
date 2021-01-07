@@ -8,6 +8,7 @@ namespace Common.Models
 {
     public class IndexAssocationEntity
     {
+        public string Nature { get; set; }
         public string Id { get; set; }
         public string TitleId { get; set; }
         public string DataSetId { get; set; }
