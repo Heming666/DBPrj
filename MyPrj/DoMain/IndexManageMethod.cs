@@ -51,8 +51,8 @@ namespace MyPrj.DoMain
                         natureList.ForEach(dept =>
                         {
                             string guidId = Guid.NewGuid().ToString();
-                            string indexInsert = @"INSERT INTO BASE_INDEXMANAGE(ID, DEPTID, TITLE, DEPTCODE, DEPTNAME, SORT, ISSHOW, CREATEUSERID, CREATEDATE, CREATEUSERNAME, MODIFYUSERID, MODIFYDATE, MODIFYUSERNAME, INDEXTYPE) 
-VALUES ('" + guidId + "', '" + dept.DepartmentId + "', '" + index.Title + "', '" + dept.EnCode + "', '" + dept.FullName + "', " + index.Sort + ", " + index.IsShow + ", 'SYSTEM',{0} , 'Software', 'SYSTEM', {0}, 'Software', " + index.IndexType + ")";
+                            string indexInsert = @"INSERT INTO BASE_INDEXMANAGE(ID, DEPTID, TITLE, DEPTCODE, DEPTNAME, SORT, ISSHOW, CREATEUSERID, CREATEDATE, CREATEUSERNAME, MODIFYUSERID, MODIFYDATE, MODIFYUSERNAME, INDEXTYPE, Templet) 
+VALUES ('" + guidId + "', '" + dept.DepartmentId + "', '" + index.Title + "', '" + dept.EnCode + "', '" + dept.FullName + "', " + index.Sort + ", " + index.IsShow + ", 'SYSTEM',{0} , 'Software', 'SYSTEM', {0}, 'Software', " + index.IndexType + ", " + index.Templet + ")";
                             if (_dbmodel.DBType == "Oracle")
                             {
                                 indexInsert = string.Format(indexInsert, $"to_date('{DateTime.Now:yyyy-MM-dd HH:mm:ss}','yyyy-mm-dd hh24:mi:ss')");
@@ -141,6 +141,7 @@ VALUES ('" + guidId + "', '" + dept.DepartmentId + "', '" + index.Title + "', '"
                     ModifyDate = DateTime.Parse(sheet.Cells[i, 12].StringValue),
                     ModifyUserName = sheet.Cells[i, 13].StringValue.Trim(),
                     IndexType = sheet.Cells[i, 14].IntValue,
+                    Templet = sheet.Cells[i, 15].IntValue,
                 };
                 data.Add(indexEntity);
             }

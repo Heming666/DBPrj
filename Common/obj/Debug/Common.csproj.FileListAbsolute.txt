@@ -13,3 +13,4 @@ C:\Users\Administrator\Desktop\DBPrj\Common\bin\Debug\Common.pdb
 C:\Users\Administrator\Desktop\DBPrj\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\DBPrj\Common\obj\Debug\Common.dll
 C:\Users\Administrator\Desktop\DBPrj\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Desktop\DBPrj\Common\obj\Debug\Common.csprojAssemblyReference.cache

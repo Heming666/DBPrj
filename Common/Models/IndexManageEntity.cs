@@ -35,6 +35,10 @@ namespace Common.Models
         /// 分类类型 0平台端  1 安卓终端
         /// </summary>
         public int? IndexType { get; set; }
+        /// <summary>
+        /// 所属的模板  1第一套  2 第二套 一次类推
+        /// </summary>
+        public int? Templet { get; set; }
 
     }
 }
