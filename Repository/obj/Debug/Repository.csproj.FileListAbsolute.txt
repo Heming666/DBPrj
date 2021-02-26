@@ -34,3 +34,15 @@ C:\Users\Administrator\Desktop\DBPrj\Repository\obj\Debug\Repository.csproj.Core
 C:\Users\Administrator\Desktop\DBPrj\Repository\obj\Debug\Repository.csproj.CopyComplete
 C:\Users\Administrator\Desktop\DBPrj\Repository\obj\Debug\Repository.dll
 C:\Users\Administrator\Desktop\DBPrj\Repository\obj\Debug\Repository.pdb
+C:\Users\何明\Desktop\DBPrj\Repository\bin\Debug\Repository.dll.config
+C:\Users\何明\Desktop\DBPrj\Repository\bin\Debug\Repository.dll
+C:\Users\何明\Desktop\DBPrj\Repository\bin\Debug\Repository.pdb
+C:\Users\何明\Desktop\DBPrj\Repository\bin\Debug\Common.dll
+C:\Users\何明\Desktop\DBPrj\Repository\bin\Debug\MySql.Data.dll
+C:\Users\何明\Desktop\DBPrj\Repository\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\何明\Desktop\DBPrj\Repository\bin\Debug\Common.pdb
+C:\Users\何明\Desktop\DBPrj\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\何明\Desktop\DBPrj\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\何明\Desktop\DBPrj\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\何明\Desktop\DBPrj\Repository\obj\Debug\Repository.dll
+C:\Users\何明\Desktop\DBPrj\Repository\obj\Debug\Repository.pdb

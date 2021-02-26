@@ -14,3 +14,8 @@ C:\Users\Administrator\Desktop\DBPrj\Common\obj\Debug\Common.csproj.CoreCompileI
 C:\Users\Administrator\Desktop\DBPrj\Common\obj\Debug\Common.dll
 C:\Users\Administrator\Desktop\DBPrj\Common\obj\Debug\Common.pdb
 C:\Users\Administrator\Desktop\DBPrj\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\何明\Desktop\DBPrj\Common\bin\Debug\Common.dll
+C:\Users\何明\Desktop\DBPrj\Common\bin\Debug\Common.pdb
+C:\Users\何明\Desktop\DBPrj\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\何明\Desktop\DBPrj\Common\obj\Debug\Common.dll
+C:\Users\何明\Desktop\DBPrj\Common\obj\Debug\Common.pdb

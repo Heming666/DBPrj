@@ -62,6 +62,7 @@
       <DependentUpon>DataBaseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DoMain\IndexManageMethod.cs" />
+    <Compile Include="DoMain\UserManual.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
