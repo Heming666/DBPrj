@@ -22,6 +22,7 @@ namespace MyPrj
         private MsgForm msgForm;
 
         public event Action<string> WriteMsg;
+        public event Action<DBModel, IRepository> GetDB;
         public From1()
         {
             InitializeComponent();
@@ -65,7 +66,9 @@ namespace MyPrj
         private void Btn_BuidIndex_Click(object sender, EventArgs e)
         {
             IndexDataForm indexDataForm = new IndexDataForm();
+            this.GetDB += indexDataForm.GetDbInfo;
             indexDataForm.WriteMsg += msgForm.WriteMsg;
+            GetDB?.Invoke(_dbmodel, _repository);
             indexDataForm.Show();
             // var  indexManageMethod =  new IndexManageMethod(_repository,_dbmodel);
             //indexManageMethod.WriteMsg += msgForm.WriteMsg;

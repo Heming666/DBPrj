@@ -26,6 +26,8 @@ namespace MyPrj
         public void WriteMsg(string msg)
         {
             msg += "\r\n";
+            msg += "----------------";
+            msg += "\r\n";
             txt_Msg.AppendText(msg);
         }
     }
