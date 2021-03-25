@@ -63,19 +63,37 @@
     </Compile>
     <Compile Include="DoMain\IndexManageMethod.cs" />
     <Compile Include="DoMain\UserManual.cs" />
+    <Compile Include="FormArea\IndexDataSet\IndexDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormArea\IndexDataSet\IndexDataForm.Designer.cs">
+      <DependentUpon>IndexDataForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="MsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgForm.Designer.cs">
+      <DependentUpon>MsgForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DataBaseForm.resx">
       <DependentUpon>DataBaseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormArea\IndexDataSet\IndexDataForm.resx">
+      <DependentUpon>IndexDataForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgForm.resx">
+      <DependentUpon>MsgForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

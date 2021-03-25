@@ -1,5 +1,6 @@
 ﻿using Common.Models;
 using MyPrj.DoMain;
+using MyPrj.FormArea.IndexDataSet;
 using Newtonsoft.Json;
 using Repository;
 using System;
@@ -18,9 +19,15 @@ namespace MyPrj
     {
         private DBModel _dbmodel;
         private IRepository _repository;
+        private MsgForm msgForm;
+
+        public event Action<string> WriteMsg;
         public From1()
         {
             InitializeComponent();
+             msgForm = new MsgForm();
+            this.WriteMsg += msgForm.WriteMsg;
+            msgForm.Show();
         }
 
         private void btn_CheckDB_Click(object sender, EventArgs e)
@@ -42,17 +49,13 @@ namespace MyPrj
             _dbmodel.BuidConStr();
             txt_checkDB.Text = _dbmodel.ConnStr;
             _repository = repository;
-            WriteMsg("数据库选择完毕");
+            WriteMsg?.Invoke("数据库选择完毕");
         }
 
 
 
 
-        private void WriteMsg(string msg)
-        {
-            msg += "\r\n";
-            txt_Msg.AppendText(msg);
-        }
+
 
         /// <summary>
         /// 初始化指标数据
@@ -61,16 +64,19 @@ namespace MyPrj
         /// <param name="e"></param>
         private void Btn_BuidIndex_Click(object sender, EventArgs e)
         {
-             var  indexManageMethod =  new IndexManageMethod(_repository,_dbmodel);
-            indexManageMethod.WriteMsg += this.WriteMsg;
-            try
-            {
-                indexManageMethod.InitIndexData();
-            }
-            catch (Exception ex)
-            {
-                WriteMsg(ex.Message+"\r\n"+JsonConvert.SerializeObject(ex.InnerException));
-            }
+            IndexDataForm indexDataForm = new IndexDataForm();
+            indexDataForm.WriteMsg += msgForm.WriteMsg;
+            indexDataForm.Show();
+            // var  indexManageMethod =  new IndexManageMethod(_repository,_dbmodel);
+            //indexManageMethod.WriteMsg += msgForm.WriteMsg;
+            //try
+            //{
+            //    indexManageMethod.InitIndexData();
+            //}
+            //catch (Exception ex)
+            //{
+            //    WriteMsg?.Invoke(ex.Message+"\r\n"+JsonConvert.SerializeObject(ex.InnerException));
+            //}
            
         }
     }

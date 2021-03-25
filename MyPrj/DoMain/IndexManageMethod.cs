@@ -92,14 +92,18 @@ VALUES ('" + guidId + "', '" + dept.DepartmentId + "', '" + index.Title + "', '"
             #endregion 指标的关联关系
 
             List<Task> taskList = new List<Task>();
+            WriteMsg?.Invoke($"开始执行指标配置 {indexSqlList.Count}条数据");
             indexSqlList.ForEach(x =>
             {
-                var task = Task.Run(() => { _service.ExecuteNonQuery(x); });
+                WriteMsg?.Invoke("执行sql语句：" + x);
+                var task = Task.Run(() => {  _service.ExecuteNonQuery(x); });
                 taskList.Add(task);
             });
+            WriteMsg?.Invoke($"开始执行关联关系 {asscocationSqlList.Count}条数据");
             asscocationSqlList.ForEach(x =>
             {
-                var task = Task.Run(() => { _service.ExecuteNonQuery(x); });
+                WriteMsg?.Invoke("执行sql语句：" + x);
+                var task = Task.Run(() => {  _service.ExecuteNonQuery(x); });
                 taskList.Add(task);
             });
             WriteMsg?.Invoke("指标配置执行完毕");

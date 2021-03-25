@@ -85,3 +85,5 @@ C:\Users\何明\Desktop\DBPrj\MyPrj\obj\Debug\MyPrj.csproj.CoreCompileInputs.cac
 C:\Users\何明\Desktop\DBPrj\MyPrj\obj\Debug\MyPrj.csproj.CopyComplete
 C:\Users\何明\Desktop\DBPrj\MyPrj\obj\Debug\MyPrj.exe
 C:\Users\何明\Desktop\DBPrj\MyPrj\obj\Debug\MyPrj.pdb
+C:\Users\Administrator\Desktop\DBPrj\MyPrj\obj\Debug\MyPrj.FormArea.IndexDataSet.IndexDataForm.resources
+C:\Users\Administrator\Desktop\DBPrj\MyPrj\obj\Debug\MyPrj.MsgForm.resources
